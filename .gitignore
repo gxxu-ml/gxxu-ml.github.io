@@ -16,3 +16,6 @@
 
 # Secrets (never commit)
 .env
+
+# Local photo source folder (not part of the site)
+pics/
