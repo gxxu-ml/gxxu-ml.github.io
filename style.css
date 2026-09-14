@@ -240,8 +240,8 @@ body {
 }
 
 .award-figure figcaption {
-    margin-top: 0.75rem;
-    font-size: 0.9rem;
+    margin-top: 0.6rem;
+    font-size: 0.78rem;
     color: var(--text-light);
     font-style: italic;
 }
