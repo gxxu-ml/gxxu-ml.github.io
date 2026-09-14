@@ -194,6 +194,58 @@ body {
     color: var(--text-color);
 }
 
+/* Awards Section */
+.awards-list {
+    list-style: none;
+}
+
+.awards-list li {
+    display: flex;
+    gap: 1.5rem;
+    margin-bottom: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid var(--border-color);
+}
+
+.awards-list li:last-child {
+    border-bottom: none;
+}
+
+.award-item {
+    flex: 1;
+    color: var(--text-color);
+}
+
+.award-item a {
+    color: var(--link-color);
+    text-decoration: none;
+}
+
+.award-item a:hover {
+    color: var(--link-hover);
+}
+
+.award-figure {
+    margin-top: 2rem;
+    max-width: 560px;
+}
+
+.award-figure img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    border: 1px solid var(--border-color);
+    box-shadow: 0 4px 14px rgba(0,0,0,0.12);
+    display: block;
+}
+
+.award-figure figcaption {
+    margin-top: 0.75rem;
+    font-size: 0.9rem;
+    color: var(--text-light);
+    font-style: italic;
+}
+
 /* Experience Section */
 .experience-item {
     margin-bottom: 2.5rem;
@@ -358,7 +410,8 @@ footer p {
         grid-template-columns: 1fr;
     }
 
-    .news-list li {
+    .news-list li,
+    .awards-list li {
         flex-direction: column;
         gap: 0.5rem;
     }
