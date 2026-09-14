@@ -94,11 +94,11 @@ body {
     object-fit: cover;
     margin-bottom: 2rem;
     border: 4px solid var(--border-color);
-    display: none;
+    display: inline-block;
 }
 
-.profile-pic.loaded {
-    display: inline-block;
+.profile-pic.hidden {
+    display: none;
 }
 
 .hero h1 {

@@ -1,16 +1,13 @@
 // Update copyright year
 document.getElementById('year').textContent = new Date().getFullYear();
 
-// Handle profile picture loading
+// Show the profile picture by default; hide it only if it fails to load
 const profilePic = document.getElementById('profile-pic');
-profilePic.addEventListener('load', function() {
-    this.classList.add('loaded');
-});
-
-// If image doesn't exist, hide the placeholder
-profilePic.addEventListener('error', function() {
-    this.style.display = 'none';
-});
+if (profilePic) {
+    profilePic.addEventListener('error', function() {
+        this.classList.add('hidden');
+    });
+}
 
 // Smooth scrolling for navigation links (fallback for older browsers)
 document.querySelectorAll('a[href^="#"]').forEach(anchor => {
